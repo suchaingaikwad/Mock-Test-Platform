@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Feedback</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="main-nav">
+    <div class="nav-brand">Mock Test Platform</div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+</nav>
+    <div class="form-container">
+        <h2>Provide Feedback</h2>
+        <form action="index.html" method="GET">
+            <div class="input-group">
+                <label>How would you rate the difficulty of the test?</label>
+                <select name="difficulty" required style="width: 100%; padding: 10px;">
+                    <option value="">Select an option...</option>
+                    <option value="easy">Too Easy</option>
+                    <option value="moderate">Moderate</option>
+                    <option value="hard">Too Hard</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="comments">Any technical issues or comments?</label>
+                <textarea id="comments" name="comments" rows="4" style="width: 100%; padding: 10px; resize: vertical;"></textarea>
+            </div>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+</body>
+</html>
